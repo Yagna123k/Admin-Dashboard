@@ -10,4 +10,8 @@ app.get('/', (req, res) => {
     res.send('Welcome to the Super Admin Dashboard API');
 });
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+const connectMongoDB = require("./DataBase/ConnectMongoDB")
+
+connectMongoDB().then(() => {
+    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+})
