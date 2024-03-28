@@ -1,0 +1,17 @@
+@import "../../styles/variables.scss";
+.search-container{
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 30px;
+    .icon{
+        font-size: 25px;
+        color: $dark-color;
+    }
+    .input-text{
+        width: 100%;
+        height: 100%;
+        border-radius: 0 10px 10px 0;
+        border: none;
+    }
+}

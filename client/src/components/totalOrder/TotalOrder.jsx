@@ -1,0 +1,1 @@
+import "./totalorder.scss";
