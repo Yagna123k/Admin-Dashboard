@@ -21,5 +21,9 @@ connectMongoDB().then(() => {
 app.use(express.json())
 
 const userRoute = require("./routes/user")
+const managementRoutes = require("./routes/management");
+const clientRoutes = require( "./routes/client");
 
+app.use("/management", managementRoutes);
+app.use("/client", clientRoutes);
 app.use("/user", userRoute)

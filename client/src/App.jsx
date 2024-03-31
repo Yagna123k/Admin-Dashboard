@@ -1,55 +1,54 @@
-import React from 'react';
-import './App.css';
-import "./styles/global.scss";
+import React, { useMemo } from "react";
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import { createTheme } from "@mui/material/styles";
+import { useSelector } from "react-redux";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
-//components
-import Navbar from "./components/navbar/Navbar";
-import Menu from "./components/menu/menu";
-import Footer from "./components/footer/Footer";
-//pages
-import Home from "../src/pages/home/Home";
-import Login from "../src/pages/login/Login";
-//Icons
+// Theme
+import { themeSettings } from "./theme";
 
-//React-Router
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+// Scenes
+import {
+  Layout,
+  Dashboard,
+  Products,
+  Customers,
+  Transactions,
+  Monthly,
+  Admin,
+  Performance,
+} from "./scenes";
 
-function App() {
-  const Layout = () => {
-    return (
-      <div className="main">
-        <Navbar />
-        <div className="container">
-          <div className="menuContainer">
-            <Menu />
-          </div>
-          <div className="contentContainer">
-            <Outlet />
-          </div>
-        </div>
-        <Footer />
-      </div>
-    );
-  };
+// App
+const App = () => {
+  // Dark/Light mode
+  const mode = useSelector((state) => state.global.mode);
+  // theme setting
+  const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
 
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Layout />,
-      children: [
-        {
-          path: "/",
-          element: <Home />,
-        }
-      ]
-
-    },
-    {
-      path: "/login",
-      element: <Login />,
-    },
-  ]);
-  return <RouterProvider router={router} />;
-}
+  return (
+    <div className="app">
+      <BrowserRouter>
+        {/* Theme Provider */}
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <Routes>
+            {/* Routes */}
+            <Route element={<Layout />}>
+              <Route path="/" element={<Navigate to="/dashboard" replace />} />
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/products" element={<Products />} />
+              <Route path="/customers" element={<Customers />} />
+              <Route path="/transactions" element={<Transactions />} />
+              <Route path="/monthly" element={<Monthly />} />
+              <Route path="/admin" element={<Admin />} />
+              <Route path="/performance" element={<Performance />} />
+            </Route>
+          </Routes>
+        </ThemeProvider>
+      </BrowserRouter>
+    </div>
+  );
+};
 
 export default App;
