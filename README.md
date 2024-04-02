@@ -4,7 +4,7 @@
 The Super Admin Dashboard is a web application designed to empower administrators to manage various aspects of a food delivery system. It provides functionalities for user authentication, order management, menu management, analytics, access control, and security.
 
 ## Deployed Links
-- Frontend: https://kirabiz-admin-dashboard.vercel.app
+- Frontend: [https://kirabiz-admin-dashboard.vercel.app](https://admin-dashboard-client-brown.vercel.app/dashboard)
 - Backend: https://admin-dashboard-server-21.vercel.app
 
 ## Technologies Used
