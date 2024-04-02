@@ -23,7 +23,13 @@ app.use(express.json())
 const userRoute = require("./routes/user")
 const managementRoutes = require("./routes/management");
 const clientRoutes = require( "./routes/client");
+const vendorRoutes = require('./routes/vendor')
+const riderRoutes = require('./routes/rider')
+const restaurantRoutes = require('./routes/restaurant')
 
 app.use("/management", managementRoutes);
 app.use("/client", clientRoutes);
 app.use("/user", userRoute)
+app.use('/vendor', vendorRoutes)
+app.use("/rider", riderRoutes)
+app.use('/restaurant', restaurantRoutes)
