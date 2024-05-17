@@ -18,6 +18,8 @@ export const api = createApi({
     "Admins",
     "Performance",
     "Dashboard",
+    "Orders",
+    "Items",
   ],
   // endpoints
   endpoints: (build) => ({
@@ -61,6 +63,18 @@ export const api = createApi({
       query: () => "general/dashboard",
       providesTags: ["Dashboard"],
     }),
+    getOrders: build.query({
+      query: () => "client/orders",
+      providesTags: ["Orders"],
+    }),
+    getRegistration: build.query({
+      query: () => "client/registration",
+      providesTags: ["Registration"],
+    }),
+    getItems: build.query({
+      query: () => "client/items",
+      providesTags: ["Items"],
+    }),
   }),
 });
 
@@ -75,4 +89,7 @@ export const {
   useGetAdminsQuery,
   useGetUserPerformanceQuery,
   useGetDashboardQuery,
+  useGetOrdersQuery,
+  useGetRegistrationQuery,
+  useGetItemsQuery,
 } = api;

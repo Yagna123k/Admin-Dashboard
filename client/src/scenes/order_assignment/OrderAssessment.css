@@ -1,0 +1,189 @@
+
+
+.OrderAssessment {
+    background-color: transparent; /* Dark background */
+    color: #fff; /* Light text */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    margin-top: 25px;
+  }
+  
+  .OrderAssessment h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff; /* Light text */
+  }
+  
+  .OrderList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .OrderListItem {
+    border-bottom: 1px solid #555; /* Darker border */
+    padding: 20px 0;
+  }
+  
+  .OrderListItem:last-child {
+    border-bottom: none;
+  }
+  
+  .OrderDetails {
+    margin-bottom: 10px;
+  }
+  
+  .OrderDetails strong {
+    font-weight: bold;
+    color: #aaa; /* Lighter text */
+  }
+  
+  .CustomerName {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .Total {
+    color: #28a745;
+    font-weight: bold;
+  }
+  .DeleteButton {
+    background-color: #dc3545; /* Red */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    margin-left: 25px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .DeleteButton:hover {
+    background-color: #c82333; /* Darker red on hover */
+  }
+  
+  .OrderListItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #555; /* Darker border */
+    padding: 20px 0;
+  }
+  
+  .OrderListItem:last-child {
+    border-bottom: none;
+  }
+  
+  .OrderDetails {
+    margin-right: 20px;
+  }
+  
+  .Total {
+    margin-left: auto;
+  }
+  .OrderAssessment {
+    background-color: transparent; /* Darker background */
+    margin-top: 25px;
+    color: #fff; /* Light text */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+  
+  .OrderAssessment h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff; /* Light text */
+    text-align: center; /* Center align heading */
+  }
+  
+  .OrderList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .OrderListItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #555; /* Darker border */
+    padding: 20px 0;
+  }
+  
+  .OrderListItem:last-child {
+    border-bottom: none;
+  }
+  
+  .OrderDetails {
+    margin-right: 20px;
+  }
+  
+  .Total {
+    margin-right: 25px;
+  } 
+  .OrderAssessment {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: transparent;
+    color: #ffffff;
+    margin-top: 25px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .OrderList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .OrderListItem {
+    margin-bottom: 20px;
+  }
+  
+  .OrderDetails {
+    margin-bottom: 10px;
+  }
+  
+  .CustomerName {
+    font-weight: bold;
+    color: #ffcc00; /* Yellow color for customer name */
+  }
+  
+  .Total {
+    font-weight: bold;
+  }
+  
+  .Actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .AssignButton,
+  .DeleteButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .AssignButton {
+    background-color: #4CAF50; /* Green color for Assign button */
+    color: #fff;
+  }
+  
+  .DeleteButton {
+    background-color: #f44336; /* Red color for Delete button */
+    color: #fff;
+  }
+  
+  .AssignButton:hover,
+  .DeleteButton:hover {
+    background-color: #333; /* Darker background color on hover */
+  }
+  
+  

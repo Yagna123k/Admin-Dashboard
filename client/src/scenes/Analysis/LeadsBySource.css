@@ -1,0 +1,17 @@
+.leads-by-source-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px 20px;
+  height: 456px;
+  width: 398px;
+}
+
+.leads-by-source-pie-chart {
+  width: 365px;
+}
+
+.leads-by-source-container h2 {
+  text-align: center;
+}

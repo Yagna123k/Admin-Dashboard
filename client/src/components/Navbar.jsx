@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { setMode } from "../state";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import {
   AppBar,
   useTheme,
@@ -61,7 +62,7 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
           </IconButton>
 
           {/* Search */}
-          {/* <FlexBetween
+          <FlexBetween
             backgroundColor={theme.palette.background.alt}
             borderRadius="9px"
             gap="3rem"
@@ -72,13 +73,13 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
             <IconButton>
               <Search />
             </IconButton>
-          </FlexBetween> */}
+          </FlexBetween>
         </FlexBetween>
 
         {/* Right Side */}
         <FlexBetween gap="1.5rem">
           {/* Source Code */}
-          {/* <IconButton
+          <IconButton
             onClick={() =>
               window.open(
                 "http://www.github.com/sanidhyy/mern-admin/",
@@ -88,7 +89,7 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
             title="Source Code"
           >
             <GitHub sx={{ fontSize: "25px" }} />
-          </IconButton> */}
+          </IconButton>
 
           {/* Dark/Light Mode */}
           <IconButton onClick={() => dispatch(setMode())} title="Dark Mode">
@@ -99,12 +100,12 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
             )}
           </IconButton>
 
-          {/* Settings 
+          {/* Settings  */}
           <IconButton title="Setting">
             <SettingsOutlined sx={{ fontSize: "25px" }} />
-            </IconButton> */}
+            </IconButton>
 
-          {/* User 
+          {/* User  */}
            <FlexBetween>
             <Button
               onClick={handleClick}
@@ -149,19 +150,19 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
               />
             </Button>
 
-            {/* DropDown 
+            {/* DropDown  */}
             <Menu
               anchorEl={anchorEl}
               open={isOpen}
               onClose={handleClose}
               anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
             >
-              {/* log out 
+            {/* log out  */}
               <MenuItem onClick={handleClose} title="Log Out">
                 Log Out
               </MenuItem>
             </Menu>
-          </FlexBetween> */}
+          </FlexBetween>
         </FlexBetween>
       </Toolbar>
     </AppBar>

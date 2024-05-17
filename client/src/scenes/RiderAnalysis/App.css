@@ -1,0 +1,251 @@
+/* App.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #695555;
+  color: #333; /* Default text color */
+}
+
+.App {
+  text-align: center;
+}
+
+.super-admin-dashboard {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+    margin-bottom: 30px;
+    margin-top: 0;
+    background-color: #bec9a2;
+    color: #333;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.dashboard-section > * {
+  flex: 1 1;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-section > *:last-child {
+  margin-right: 0;
+}
+
+.dashboard-stats {
+  display: flex;
+  margin-top: -15px;
+  margin-bottom: -30px;
+}
+
+.stat-box {
+  flex: 1;
+  padding: 7px;
+  background-color: #e9cdcd;
+  border-radius: 8px;
+  margin-right: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-box:last-child {
+  margin-right: 0;
+}
+
+.stat-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: -25px;
+  color: #444;
+}
+
+.stat-box p {
+  margin-bottom: 25px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #666;
+}
+
+.heading {
+  font-size: 30px;
+  border-bottom: 1px solid black;
+  margin-top: 7px;
+}
+
+.all-orders p,
+.user-details p,
+.rider-details p {
+  margin-bottom: 10px;
+}
+
+/* All Orders Section */
+.all-orders {
+  margin-bottom: 40px;
+}
+
+.allorders {
+  height: 336px;
+}
+
+.order-box {
+  padding: 20px;
+  background-color: #e3ebda;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.order-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.order-text {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+}
+
+/* User Details Section */
+.user-details {
+  margin-bottom: 40px;
+}
+
+.userdetails {
+  height: 336px;
+}
+
+.user-details-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-box {
+  flex: 1;
+  padding: 20px;
+  background-color: #e3ebda;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.user-text {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.user-stats {
+  display: flex;
+}
+
+.user-box + .user-box {
+  margin-left: 10px;
+}
+
+/* Rider Details Section */
+.rider-details {
+  margin-bottom: 40px;
+}
+
+.rider-details-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.rider-box {
+  flex: 1;
+  padding: 20px;
+  background-color: #e3ebda;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.rider-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.rider-text {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.rider-stats {
+  display: flex;
+}
+
+.rider-box + .rider-box {
+  margin-left: 10px;
+}
+
+
+/* Weekly Rider Ratings Section */
+.weekly-rider-ratings .bar-graph {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.weekly-rider-ratings .bar {
+  flex: 1;
+  margin-right: 20px;
+  position: relative;
+}
+
+.weekly-rider-ratings .bar-fill {
+  background-color: #007bff;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.weekly-rider-ratings .bar span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5px;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Layout Design */
+.secondrow {
+  margin-bottom: 10px;
+}
+
+.allorders {
+  margin-right: 12px;
+}
+
+.riderdetails {
+  margin-right: 12px;
+}
