@@ -48,6 +48,18 @@ const navItems = [
     icon: <ShoppingCartOutlined />,
   },
   {
+    text: "Orders",
+    icon: <TodayOutlined />,
+  },
+  {
+    text: "Restaurants",
+    icon: <TodayOutlined />,
+  },
+  {
+    text: "Orders_Assignment",
+    icon: <TodayOutlined />,
+  },
+  {
     text: "Customers",
     icon: <Groups2Outlined />,
   },
@@ -64,6 +76,14 @@ const navItems = [
     icon: <CalendarMonthOutlined />,
   },
   {
+    text: "Analysis",
+    icon: <CalendarMonthOutlined />,
+  },
+  {
+    text: "Rider_Analysis",
+    icon: <CalendarMonthOutlined />,
+  },
+  {
     text: "Management",
     icon: null,
   },
@@ -73,6 +93,10 @@ const navItems = [
   },
   {
     text: "Performance",
+    icon: <TrendingUpOutlined />,
+  },
+  {
+    text: "Registration",
     icon: <TrendingUpOutlined />,
   },
 ];

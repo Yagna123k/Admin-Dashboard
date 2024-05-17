@@ -1,0 +1,41 @@
+/* TopDeals.css */
+.top-deals-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0;
+  }
+
+  .top-deals-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .deals-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .deal-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .deal-name {
+    font-weight: bold;
+  }
+  
+  .deal-amount {
+    color: #28a745; /* Green color for the amount */
+  }
+  
